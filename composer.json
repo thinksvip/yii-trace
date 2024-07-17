@@ -1,0 +1,39 @@
+{
+    "name": "xincheng/yii-trace",
+    "description": "yii log append trace id",
+    "type": "library",
+    "keywords": ["traceid"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "owenpi",
+            "email": "owenpi@sz2k.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Xincheng\\YiiTrace\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xincheng\\YiiTrace\\Tests\\": "Tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "yiisoft/yii2": "^2.0.50",
+        "bower-asset/jquery": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4|^9.0"
+    },
+    "extra": {
+        "bootstrap": "XinCheng\\YiiTrace\\Bootstrap"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
