@@ -45,7 +45,13 @@ log.php
 
 ```php
 echo Yii::$app->params['trace_id'];
+
+echo Yii::$app->traceId->getTraceId();
 ```
+
+### 使用外部TraceId
+
+> header里需要设置： x-request-id
 
 
 ### 日志示例
